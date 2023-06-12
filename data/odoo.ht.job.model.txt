@@ -1,0 +1,80 @@
+field name                  field label                  field type
+--------------------------  ---------------------------  ------------
+website_id                  Website                      many2one
+website_published           Visible on current website   boolean
+is_published                Is Published                 boolean
+can_publish                 Can Publish                  boolean
+website_url                 Website URL                  char
+is_seo_optimized            SEO optimized                boolean
+website_meta_title          Website meta title           char
+website_meta_description    Website meta description     text
+website_meta_keywords       Website meta keywords        char
+website_meta_og_img         Website opengraph image      char
+seo_name                    Seo name                     char
+message_is_follower         Is Follower                  boolean
+message_follower_ids        Followers                    one2many
+message_partner_ids         Followers (Partners)         many2many
+message_ids                 Messages                     one2many
+has_message                 Has Message                  boolean
+message_needaction          Action Needed                boolean
+message_needaction_counter  Number of Actions            integer
+message_has_error           Message Delivery error       boolean
+message_has_error_counter   Number of errors             integer
+message_attachment_count    Attachment Count             integer
+rating_ids                  Ratings                      one2many
+website_message_ids         Website Messages             one2many
+message_has_sms_error       SMS Delivery error           boolean
+active                      Active                       boolean
+name                        Job Position                 char
+sequence                    Sequence                     integer
+expected_employees          Total Forecasted Employees   integer
+no_of_employee              Current Number of Employees  integer
+no_of_recruitment           Target                       integer
+no_of_hired_employee        Hired Employees              integer
+employee_ids                Employees                    one2many
+description                 Job Description              html
+requirements                Requirements                 text
+department_id               Department                   many2one
+company_id                  Company                      many2one
+contract_type_id            Employment Type              many2one
+id                          ID                           integer
+display_name                Display Name                 char
+create_uid                  Created by                   many2one
+create_date                 Created on                   datetime
+write_uid                   Last Updated by              many2one
+write_date                  Last Updated on              datetime
+alias_id                    Alias                        many2one
+address_id                  Job Location                 many2one
+application_ids             Job Applications             one2many
+application_count           Application Count            integer
+all_application_count       All Application Count        integer
+new_application_count       New Application              integer
+old_application_count       Old Application              integer
+applicant_hired             Applicants Hired             integer
+manager_id                  Department Manager           many2one
+user_id                     Recruiter                    many2one
+hr_responsible_id           HR Responsible               many2one
+document_ids                Documents                    one2many
+documents_count             Document Count               integer
+color                       Color Index                  integer
+is_favorite                 Is Favorite                  boolean
+favorite_user_ids           Favorite User                many2many
+interviewer_ids             Interviewers                 many2many
+extended_interviewer_ids    Extended Interviewer         many2many
+activities_overdue          Activities Overdue           integer
+activities_today            Activities Today             integer
+default_contract_id         Contract Template            many2one
+website_description         Website description          html
+job_details                 Process Details              html
+published_date              Published Date               date
+alias_name                  Alias Name                   char
+alias_model_id              Aliased Model                many2one
+alias_user_id               Owner                        many2one
+alias_defaults              Default Values               text
+alias_force_thread_id       Record Thread ID             integer
+alias_domain                Alias domain                 char
+alias_parent_model_id       Parent Model                 many2one
+alias_parent_thread_id      Parent Record Thread ID      integer
+alias_contact               Alias Contact Security       selection
+alias_bounced_content       Custom Bounced Message       html
+alias_status                Alias Status                 selection

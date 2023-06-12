@@ -1,0 +1,36 @@
+field name         field label                                   field type
+-----------------  --------------------------------------------  ------------------
+name               Name                                          char
+description        Description                                   text
+res_name           Resource Name                                 char
+res_model          Resource Model                                char
+res_field          Resource Field                                char
+res_id             Resource ID                                   many2one_reference
+company_id         Company                                       many2one
+type               Type                                          selection
+url                Url                                           char
+public             Is public document                            boolean
+access_token       Access Token                                  char
+raw                File Content (raw)                            binary
+datas              File Content (base64)                         binary
+db_datas           Database Data                                 binary
+store_fname        Stored Filename                               char
+file_size          File Size                                     integer
+checksum           Checksum/SHA1                                 char
+mimetype           Mime Type                                     char
+index_content      Indexed Content                               text
+id                 ID                                            integer
+display_name       Display Name                                  char
+create_uid         Created by                                    many2one
+create_date        Created on                                    datetime
+write_uid          Last Updated by                               many2one
+write_date         Last Updated on                               datetime
+local_url          Attachment URL                                char
+image_src          Image Src                                     char
+image_width        Image Width                                   integer
+image_height       Image Height                                  integer
+original_id        Original (unoptimized, unresized) attachment  many2one
+key                Key                                           char
+website_id         Website                                       many2one
+theme_template_id  Theme Template                                many2one
+document_ids       Document                                      one2many
