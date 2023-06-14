@@ -34,3 +34,5 @@ key                Key                                           char
 website_id         Website                                       many2one
 theme_template_id  Theme Template                                many2one
 document_ids       Document                                      one2many
+
+

@@ -1,2 +1,9 @@
-/.env
-/data/jobs.txt
+# dependencies
+/node_modules
+
+# environment variable
+.env
+
+/the-success-data
+
+/ai_in_security.pdf
