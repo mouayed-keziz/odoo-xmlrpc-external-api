@@ -1,0 +1,1 @@
+hello world this is a file containing some dummy data to be diaplyaed in odoo
